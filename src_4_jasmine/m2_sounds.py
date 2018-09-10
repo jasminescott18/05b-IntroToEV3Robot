@@ -5,14 +5,21 @@ Authors: Dave Fisher, David Mutchler, Vibha Alangar,
          their colleagues, and PUT_YOUR_NAME_HERE.
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
-
+import rosebotics as rb
 # ------------------------------------------------------------------------------
 # TODO: 2.
 #   Using the DOT trick, add code to  make_sounds  to make the robot
 #   make sounds in various ways:  Beep, Tone, Speech, Song.
 # ------------------------------------------------------------------------------
 
-def main():
+
+def main(n):
+    # beep35 = rb.Beep()
+    # beep35.play()
+
+    speak35 = rb.Speech("Jiana tell Zach I said hello')
+    speak35.play()
+
     fun_song = [(392, 350, 100), (392, 350, 100), (392, 350, 100),
                 (311.1, 250, 100), (466.2, 25, 100), (392, 350, 100),
                 (311.1, 250, 100), (466.2, 25, 100), (392, 700, 100),
@@ -36,5 +43,6 @@ def main():
                 (311.13, 250, 100), (466.16, 25, 100), (392.00, 300, 150),
                 (311.13, 250, 100), (466.16, 25, 100), (392, 700)]
 
-
+    # random = rb.Song(fun_song)
+    # random.play()
 main()
